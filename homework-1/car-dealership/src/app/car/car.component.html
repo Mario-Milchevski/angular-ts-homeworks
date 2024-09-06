@@ -1,0 +1,14 @@
+<mat-card appearance="outlined">
+  <mat-card-header>
+    <mat-card-title>
+      {{ car()?.brand }}
+    </mat-card-title>
+    <mat-card-subtitle>
+      {{ car()?.model }} & ${{car()?.price}}
+    </mat-card-subtitle>
+  </mat-card-header>
+  <div class="card-image">
+      <img mat-card-image [src]="car()?.images?.[0]" [alt]="car()?.brand" width="100%" />
+    </div>
+
+</mat-card>

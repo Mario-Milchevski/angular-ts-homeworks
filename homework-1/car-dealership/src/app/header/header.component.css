@@ -1,0 +1,15 @@
+ul {
+    margin: 0;
+    padding: 20px;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 50px;
+    background-color: rgb(18, 52, 104);
+    color: white;
+}
+
+li {
+    cursor: pointer;
+}

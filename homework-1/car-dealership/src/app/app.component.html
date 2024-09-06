@@ -1,0 +1,8 @@
+<app-header (onSelectPage)="handleSelectedPage($event)"/>
+@if (selectedPage() === 'home') {
+  <app-home [cars]="cars()"/>
+} @else if (selectedPage() === 'about') {
+<app-about/>
+} @else if (selectedPage() === 'contact'){
+  <app-contact/>
+}

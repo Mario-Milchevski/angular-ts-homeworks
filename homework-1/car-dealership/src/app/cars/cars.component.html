@@ -1,0 +1,10 @@
+<mat-grid-list
+  [cols]="cols"
+  (window:resize)="onResize($event)"
+>
+  @for (car of cars(); track car.id) {
+  <mat-grid-tile>
+    <app-car [car]="car" />
+  </mat-grid-tile>
+  }
+</mat-grid-list>
